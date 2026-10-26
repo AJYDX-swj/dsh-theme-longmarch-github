@@ -656,7 +656,7 @@ window.__ModuleLoader__.load({
       /* 徽记水印 + 背景纹样（随部门预设切换） */
       L.push('.lm-pat{position:absolute;inset:0;overflow:hidden;}');
       L.push('.lm-radar{position:absolute;left:50%;top:50%;width:190vmax;height:190vmax;margin:-95vmax 0 0 -95vmax;background:conic-gradient(from 0deg,' + rgba(p.glow, 0.22) + ' 0deg,' + rgba(p.glow, 0) + ' 30deg,' + rgba(p.glow, 0) + ' 360deg);animation:lm-rot 8s linear infinite;}');
-      L.push('@keyframes lm-rot{to{transform:rotate(360deg);}}');
+      L.push('@keyframes lm-rot{from{transform:rotate(0deg);}to{transform:rotate(-360deg);}}');
       /* 背景徽记（覆盖层）：和数据雨、扫描线同级，强度由内联 opacity 控制。 */
       L.push('.lm-wm{position:absolute;left:50%;top:50%;z-index:2;width:min(72vh,72vw);height:min(72vh,72vw);transform:translate(-50%,-50%);pointer-events:none;animation:lm-wm-pulse 22s ease-in-out infinite;}');
       L.push('.lm-wm-mark{width:100%;height:100%;display:inline-flex;align-items:center;justify-content:center;object-fit:contain;color:' + st.colors.main + ';}');
